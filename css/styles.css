@@ -2,6 +2,9 @@
     --primary-text-color: #2E2F42;
     --tittle-text-color: #434455;
     --acccent-color:#4D5AE5;
+    --hover-text-color:#404BBF;
+    --hero-text-color:#FFFFFF;
+    --additional-text-color:#F4F4FD;
 }
 body{ background-color: #ffffff;
     font-family: Roboto,sans-serif;
@@ -9,6 +12,9 @@ body{ background-color: #ffffff;
 }
 .list{
     list-style: none;
+}
+.link{
+    text-decoration:none;
 }
 /* header */
 
@@ -19,6 +25,7 @@ font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
 letter-spacing: 0.03em;
+text-transform: uppercase;
 }
 .web-logo{
     color:var(--acccent-color);
@@ -29,7 +36,7 @@ letter-spacing: 0.03em;
 }
 .logo:hover,
 .logo:focus{
-    color: #404BBF;
+    color:var(--hover-text-color);
 }
 
 
@@ -44,9 +51,9 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
   }  
-  .site-nav .link:hover,
-  .site-nav .link:focus{
-    color:#404BBF;
+  .site-nav a:hover,
+  .site-nav a:focus{
+    color:var(--hover-text-color);
   }
 
 
@@ -54,16 +61,17 @@ letter-spacing: 0.02em;
 
 
 /* auht nav */
-.auht-nav{
-    color:var(--primary-text-color);
-    font-family: 'Roboto';
+.auht-nav a{
+    color: var(--primary-text-color);
+font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.auht-nav :hover,.auht-nav :focus{
-    color: #404BBF;
+.auht-nav a:hover,
+.auht-nav a:focus{
+    color:var(--hover-text-color);
 }
 /* hero */
 .hero{
@@ -71,14 +79,14 @@ letter-spacing: 0.02em;
     
 }
 .hero-tittle{
-    color: #ffffff;
+    color: var(--hero-text-color);
  font-weight: 700;
 font-size: 56px;
 line-height: 1.1;
 text-align: center;
 }
 .hero-button{
-color:#FFFFFF;
+color: var(--hero-text-color);
 }
 .hero-button{
     background-color: var(--acccent-color)
@@ -86,15 +94,15 @@ color:#FFFFFF;
 }
 .hero-button:hover,
 .hero-button:focus{
-background-color: #404BBF;
+background-color:var(--hover-text-color);
 }
 .hero-button:hover,
 .hero-button:focus{
-    color: #FFFFFF;
+    color: var(--hero-text-color);
 }
 .hero-button{
     font-family:inherit;
-    font-family: 'Roboto';
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -112,7 +120,7 @@ line-height: 1.1;
 text-align: center;
 text-transform: capitalize;
 }
-.section{
+.section {
   color: var(--primary-text-color);
 font-weight: 500;
 font-size: 20px;
@@ -143,20 +151,22 @@ text-align: center;
     background-color: var(--primary-text-color);
 }
 .footer-peregraph{
-    color: #E7E9FC;;
+    color: #E7E9FC;
 font-weight: 400;
 font-size: 1.5;
 line-height: 24px;
 }
 .footer-logo{
-    color: #F4F4FD;
+    color: var(--additional-text-color);
     font-family: 'Raleway';
 font-weight: 800;
 font-size: 18px;
 line-height: 1.37;
 letter-spacing: 0.03em;
+text-transform: uppercase;
 }
-.footer-logo:hover, .footer-logo:focus{
+.footer-logo:hover,
+.footer-logo:focus{
     color:var(--acccent-color);
 }
 /* portfolio */
@@ -170,15 +180,15 @@ text-align: center;
 letter-spacing: 0.04em;
 }
 .portfolio-button{
-background-color: #F4F4FD;
+background-color: var(--additional-text-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
-color: #FFFFFF;
+color: var(--hero-text-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
-    background-color: #404BBF;
+    background-color:var(--hover-text-color);
 }
 .portfolio-button{
     cursor: pointer;
